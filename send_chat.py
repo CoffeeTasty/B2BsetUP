@@ -10,6 +10,7 @@ from openai import OpenAIError
 # load_dotenv(dotenv_path=dotenv_path)
 
 
+
 openai.api_key = "OPEN_API_KEY"
 # OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
