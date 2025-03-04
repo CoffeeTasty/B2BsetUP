@@ -5,9 +5,12 @@ import openai
 from dotenv import load_dotenv
 
 # 환경 변수 로드 (.env 파일이 현재 작업 디렉토리에 있는 경우)
-# load_dotenv()
+load_dotenv()
 # 실제 API 키를 직접 입력하거나 환경 변수로 불러옵니다.
-openai.api_key = "Secret"
+
+
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def get_historical_records(client_keyword):
